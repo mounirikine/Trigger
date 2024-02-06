@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body{
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+
+
+}
+
+.notification{
+    content: "";
+    background: rgba(249, 0, 0, 0.999);
+    width: 7px;
+    height: 7px;
+    
+}
+
+.font_family{
+    font-family: "Open Sans", sans-serif;
+}
+.scroll::-webkit-scrollbar{
+    display: none;
+}
