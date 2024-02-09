@@ -28,3 +28,7 @@
 .scroll::-webkit-scrollbar{
     display: none;
 }
+
+.primary_color{
+    background: #0088ff;
+}

@@ -7,6 +7,7 @@ import Videos from "./pages/Videos"
 import MarketPlace from "./pages/MarketPlace"
 import Messages from "./pages/Messages"
 import ChatRoom from "./pages/ChatRoom"
+import Profile from "./pages/Profile"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Route path='/MarketPlace' element={<MarketPlace />} />
       <Route path='/Messages' element={<Messages />} />
       <Route path='/chatRoom' element={<ChatRoom />} />
+      <Route path='/Profile' element={<Profile />} />
       <Route path='/login' element={<Login />} />
       <Route path='/register' element={<Register />} />
     </Routes>

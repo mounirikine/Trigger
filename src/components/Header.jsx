@@ -18,15 +18,20 @@ const Header = () => {
     'Matthew Taylor sent you a photo',
     'Sophia Clark commented on your photo',
     'William Turner tagged you in a post',
+    'Ava Anderson mentioned you in a story',
+    'Ava Anderson mentioned you in a story',
+    'Ava Anderson mentioned you in a story',
+    'Ava Anderson mentioned you in a story',
+    'Ava Anderson mentioned you in a story',
     'Ava Anderson mentioned you in a story'
   ];
   return (
     <>
       <header className="sticky shadow-md w-full top-0 z-[99999999] rounded-xl  bg-white">
         <div className="flex items-center justify-between px-5 lg:px-10 py-1 lg:py-3">
-          <div className="w-full lg:w-2/12 text-xl flex items-center justify-left mb-2 lg:mb-0">
+          <Link to='/' className="w-full lg:w-2/12 text-xl flex items-center justify-left mb-2 lg:mb-0">
             <img src={logo} className="mt-2 w-28 md:w-40" alt="" />
-          </div>
+          </Link>
           <div className="w-full lg:w-5/12 py-2 bg-gray-100 rounded-lg hidden lg:flex items-center">
             <span className="px-2 flex items-center justify-center text-xl font-bold">
               <CiSearch />
@@ -41,15 +46,15 @@ const Header = () => {
           </div>
           <div className="w-full lg:w-3/12 flex items-center justify-end gap-3 mt-2 lg:mt-0">
             <span className="text-xl w-1/5 font-bold flex items-center justify-center relative   rounded-lg">
-              <details className="dropdown bg-white t">
-                <summary className=" btn text-lg" >
+              <details className="dropdown dropdown-end bg-white t">
+                <summary className=" btn text-lg " >
                   <IoNotificationsOutline />
                   <span className=" font-bold rounded-full top-2 right-2 absolute notification"></span>
                 </summary>
-                <ul className="p-2 shadow  menu dropdown-content z-[1] max-h-[70vh] overflow-y-scroll scroll grid  bg-gray-100 rounded-box w-64">
+                <ul className="p-2 shadow  menu dropdown-content z-[1] max-h-[60vh] overflow-y-scroll scroll grid  bg-gray-100 rounded-box w-64">
       {notificationData.map((notification, index) => (
-        <li key={index}>
-          <a className="text-sm">{notification}</a>
+        <li key={index} className="truncate">
+          <a className="text-sm ">{notification}</a>
         </li>
       ))}
     </ul>

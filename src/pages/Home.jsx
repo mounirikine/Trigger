@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <Header />
       <section className="px-1 lg:px-3  ">
-        <main className="bg-gray-100 scroll   overflow-y-auto  h-screen pt-2 lg:p-4 rounded-lg flex ">
+        <main className="bg-gray-100 scroll   overflow-y-auto  h-screen pt-2 lg:p-1 rounded-lg flex ">
          <LeftSide />
           <div className=" w-full  xl:w-7/12 overflow-y-auto scroll ">
            <Feed />

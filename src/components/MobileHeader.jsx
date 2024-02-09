@@ -21,7 +21,7 @@ const MobileHeader = () => {
            <Link onClick={()=>setActiveTab('')} >< CiSearch className="text-2xl" /></Link>
            <Link onClick={()=>setActiveTab('')}  className="border p-2 rounded-full bg-blue-700">< CiCirclePlus className="text-white text-4xl" /></Link>
            <Link to='/WatchVideos' onClick={()=>setActiveTab('')} >< FaVideo className={`text-2xl ${navigate.pathname === '/WatchVideos'?'text-blue-700' :''}`} /></Link>
-           <Link onClick={()=>setActiveTab('')} >< FaUserAlt className="text-xl" /></Link>
+           <Link  to='/Profile' onClick={()=>setActiveTab('')} >< FaUserAlt className={`text-2xl ${navigate.pathname === '/Profile'?'text-blue-700' :''}`} /></Link>
         </div>
     </main>
     
