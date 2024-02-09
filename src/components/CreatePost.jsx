@@ -9,26 +9,26 @@ const CreatePost = () => {
   return (
     <>
       <section>
-        <main className="bg-white mt-4 mx-5 px-5 py-5 rounded-lg"  onClick={() =>
+        <main className="bg-white shadow-md mt-2 lg:mt-4 mx-1 lg:mx-5 px-5 py-2 lg:py-5 rounded-lg"  onClick={() =>
                   document.getElementById("my_modal_3").showModal()
                 }>
           <div className="flex items-center justify-between gap-3">
             <img
               src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?size=626&ext=jpg&ga=GA1.2.1634089821.1701467307&semt=ais"
-              width={40}
+              width={35}
               className="rounded-full "
               alt=""
             />
             <span className=" w-9/12 bg-gray-100 px-4 py-2 rounded-lg ">
               <input
                 type="text"
-                className="bg-gray-100 outline-none w-full"
+                className="bg-gray-100 outline-none w-full text-sm lg:text-base"
                 placeholder="What's on your mind? "
               />
             </span>
             <span className="w-2/12">
               <button
-                className="px-10 py-2 rounded-lg bg-blue-700 text-white font-normal hover:bg-blue-800 shadow-none border-none  "
+                className="px-3  lg:px-10 text-sm lg:text-base py-2 lg:py-2 rounded-lg bg-blue-700 text-white font-normal hover:bg-blue-800 shadow-none border-none  "
                 onClick={() =>
                   document.getElementById("my_modal_3").showModal()
                 }
@@ -77,9 +77,9 @@ const CreatePost = () => {
                     placeholder="What's on your mind ?"
                   ></textarea>
                   <div className="flex justify-between items-center">
-                    <div className="flex items-center gap-5 pb-2 text-sm py-3 px-2">
-                      <h1>Add To Your Post :</h1>
-                      <button className="flex items-center gap-1">
+                    <div className=" lg:flex  items-center gap-5 pb-2 text-sm py-3 px-2">
+                      <h1 className="mb-2 text-base">Add To Your Post :</h1>
+                      <button className="flex  items-center gap-1">
                         <FcAddImage /> <span>Image/video</span>
                       </button>
                       <button className="flex items-center gap-1">
@@ -109,8 +109,8 @@ const CreatePost = () => {
               </dialog>
             </span>
           </div>
-          <hr className="my-6" />
-          <div className="flex justify-between items-center">
+          <hr className="my-6 hidden lg:block" />
+          <div className=" hidden lg:flex justify-between items-center">
             <div className="flex items-center gap-5 pb-2 text-sm">
               <button className="flex items-center gap-1">
                 <FcAddImage /> <span>Image/video</span>

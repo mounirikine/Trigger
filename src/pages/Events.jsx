@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import LeftSide from "../components/LeftSide";
+import MobileHeader from "../components/MobileHeader";
 import RightSide from "../components/RightSide";
 import { RiMenu5Fill } from "react-icons/ri";
 
@@ -7,11 +8,11 @@ const Events = () => {
   return (
     <>
       <Header />
-      <section className="px-3  ">
-        <main className="bg-gray-100 scroll  overflow-y-auto  h-screen p-4 rounded-lg  flex">
+      <section className="px-0.5 lg:px-3  ">
+        <main className="bg-gray-100 scroll   overflow-y-auto  h-screen lg:p-4 rounded-lg  flex">
           <LeftSide />
-          <div className="  w-7/12 overflow-y-auto scroll ">
-            <div className="flex items-center justify-between px-5 py-3">
+          <div className=" w-full  xl:w-7/12 overflow-y-auto scroll ">
+            <div className="flex items-center justify-between px-2 lg:px-5 py-3">
               <h1 className="text-lg font-semibold font-sans">
                 Upcoming Event
               </h1>
@@ -21,7 +22,7 @@ const Events = () => {
               </h1>
             </div>
 
-            <div className="grid grid-cols-2 items-center gap-4 px-4">
+            <div className="grid grid-cols-1  md:grid-cols-2 items-center gap-4 px-2 md:px-4 lg:px-4">
               <div className="bg-white p-2 rounded-xl">
                 <div className="h-[250px] overflow-hidden">
                   <img
@@ -411,12 +412,12 @@ const Events = () => {
 
             </div>
           </div>
-          <div className=" h-screen w-3/12 sticky top-0 overflow-y-auto scroll">
             {/* Content for the right bar */}
             <RightSide />
-          </div>
+
         </main>
       </section>
+      <MobileHeader />
     </>
   );
 };
